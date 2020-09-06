@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SessionStorage</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="estilo.css">
+  <script  src="session.js"></script>
+</head>
+<body>
+<div class="container white z-depth-2">
+	<ul class="tabs teal">
+		<li class="tab col s3"><a class="white-text active">SessionStorage</a></li>
+	</ul>
+	<div class="col s12">
+			<div class="form-container">
+				<center><h3 class="teal-text">¡Bienvenido!</h3></center>
+				<div class="row">
+					<div class="input-field col s12">
+						<input type="text" placeholder="Nombre" id="nombretxt">
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input type="text" placeholder="Apellido" id="apellidotxt">
+					</div>
+				</div>
+				<br>
+				<center>
+					<button class="btn waves-effect waves-light teal" id="boton-guardar">Guardar</button>
+					<br>
+					<br>
+				</center>
+				<center>
+					<h2>Nombre en la sesion:</h2>
+					<label type="text" id="nombre"></label><br>                          
+					<h2>Apellido en la sesion</h2>
+				<label type="text" id="apellido"></label><br>
+				<button class="btn waves-effect waves-light teal" id="boton-cargar">Cargar elementos</button>
+				</center>
+			</div>
+	</div>
+</div>
+</body>
+</html>
